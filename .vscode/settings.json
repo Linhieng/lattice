@@ -1,0 +1,14 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "\\.ts$",
+                "cmd": "tsc --target ESNext \"${file}\""
+            },
+            {
+                "match": "\\.scss$",
+                "cmd": "sass \"${file}\" > \"${fileDirname}\\${fileBasenameNoExt}.css\""
+            }
+        ]
+    }
+}
